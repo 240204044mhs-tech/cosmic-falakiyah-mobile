@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Falakiyah</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #10151f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 25px 18px;
+    background: linear-gradient(135deg, #063b35, #102b4d);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #76e5ff;
+}
+
+header p {
+    color: #d2e5f5;
+}
+
+.container {
+    padding: 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background: #1c2736;
+    border: 1px solid #2c4058;
+    padding: 17px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #65d8ff;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.menu button {
+    background: #124c43;
+    color: white;
+    border: 1px solid #267c6c;
+    padding: 20px 10px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.menu button:active {
+    background: #247b65;
+}
+
+button {
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #9eb1c4;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌙 COSMIC FALAKIYAH</h1>
+    <p>Super Apps Astronomi & Ilmu Falak</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>🌌 Dashboard</h3>
+        <p>Selamat datang di Cosmic Falakiyah Mobile.</p>
+        <p>Eksplorasi astronomi dan ilmu falak dari iPhone kamu.</p>
+    </div>
+
+    <div class="menu">
+        <button onclick="bukaMenu('Observasi')">🔭 Observasi</button>
+        <button onclick="bukaMenu('Kalender')">📅 Kalender</button>
+        <button onclick="bukaMenu('Gerhana Bulan')">🌑 Gerhana Bulan</button>
+        <button onclick="bukaMenu('Gerhana Matahari')">☀️ Gerhana Matahari</button>
+        <button onclick="bukaMenu('Rasi Bintang')">⭐ Rasi Bintang</button>
+        <button onclick="bukaMenu('Galaksi')">🌌 Galaksi</button>
+        <button onclick="bukaMenu('Lokasi Favorit')">📍 Lokasi Favorit</button>
+        <button onclick="bukaMenu('History')">📖 History</button>
+        <button onclick="bukaMenu('Pengaturan')">⚙️ Pengaturan</button>
+        <button onclick="bukaMenu('Info')">ℹ️ Info</button>
+    </div>
+
+    <div id="content" class="card">
+        <h3>Menu Cosmic</h3>
+        <p>Pilih menu di atas untuk membuka halaman.</p>
+    </div>
+
+</div>
+
+<footer>
+    Cosmic Falakiyah Mobile • Astronomy & Islamic Astronomy
+</footer>
+
+<script>
+function bukaMenu(nama) {
+    document.getElementById("content").innerHTML = `
+        <h3>${nama}</h3>
+        <p>Menu ${nama} Cosmic Falakiyah telah dibuka.</p>
+        <p>Halaman ini nantinya dapat dikembangkan dengan rumus,
+        data astronomi, lokasi, dan fitur asli aplikasi.</p>
+    `;
+}
+</script>
+
+</body>
+</html>
